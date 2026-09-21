@@ -1,8 +1,7 @@
 # Java Collection Framework
 
-📄 Full PDF: [COLLECTION_FRAMEWORK.pdf](COLLECTION_FRAMEWORK.pdf)
+Full PDF: [COLLECTION_FRAMEWORK.pdf](COLLECTION_FRAMEWORK.pdf)
 
----
 
 ## 1. Collection Framework Foundation
 
@@ -48,7 +47,7 @@ And separately:
       HashMap  LinkedHashMap  TreeMap
 ```
 
-> **Very important:** Map is part of the Collection Framework, but Map does **not** extend the Collection interface.
+> Note: Map is part of the Collection Framework, but Map does **not** extend the Collection interface.
 
 ### 4. Important Interfaces
 - Iterable
@@ -70,7 +69,6 @@ What does `<String>` mean?
 - Why generics are useful
 - Basic generic syntax
 
----
 
 ## 2. The Main Collections
 
@@ -103,7 +101,7 @@ ArrayList<String> names = new ArrayList<>();
 - Concept, features, basic methods
 - Vector vs ArrayList
 
-**D. Stack** — LIFO (Last In → First Out)
+**D. Stack**: LIFO (Last In → First Out)
 - `push()`, `pop()`, `peek()`, `empty()`
 
 ### 2. Set
@@ -111,12 +109,12 @@ Used when you want **unique elements**: `10, 20, 10, 30` → `10, 20, 30`
 
 | Type | Unique | Ordering |
 |---|---|---|
-| HashSet | ✅ | No guaranteed order |
-| LinkedHashSet | ✅ | Insertion order |
-| TreeSet | ✅ | Sorted order |
+| HashSet | Yes | No guaranteed order |
+| LinkedHashSet | Yes | Insertion order |
+| TreeSet | Yes | Sorted order |
 
 ### 3. Queue
-Follows **FIFO — First In, First Out** (like a line at a ticket counter).
+Follows **FIFO: First In, First Out** (like a line at a ticket counter).
 
 - `add()`, `offer()`, `remove()`, `poll()`, `peek()`, `element()`
 
@@ -150,7 +148,6 @@ students.put(102, "Priya");
 | LinkedHashMap | Maintains insertion order |
 | TreeMap | Sorted by keys |
 
----
 
 ## 3. Collections in Real Java Programming
 
@@ -184,7 +181,7 @@ Collections.sort(numbers);
 Defines the natural/default ordering of objects via `compareTo()`.
 
 ### 4. Comparator
-Defines custom ordering via `compare()` — e.g. sort Students by Name, Age, or Marks.
+Defines custom ordering via `compare()`: e.g. sort Students by Name, Age, or Marks.
 
 | Comparable | Comparator |
 |---|---|
@@ -193,12 +190,12 @@ Defines custom ordering via `compare()` — e.g. sort Students by Name, Age, or 
 | Usually defined inside the class | Separate comparison logic |
 | One main ordering | Can define multiple orderings |
 
-> **Memory trick:** Comparable = "I compare myself." Comparator = "Someone else compares the objects."
+> Tip: Comparable = "I compare myself." Comparator = "Someone else compares the objects."
 
 ### 5. Important Collection Methods
 `add()`, `addAll()`, `remove()`, `removeAll()`, `contains()`, `containsAll()`, `size()`, `isEmpty()`, `clear()`, `get()`, `set()`, `indexOf()`
 
-Don't memorize them randomly — learn them according to the collection you're using.
+Don't memorize them randomly: learn them according to the collection you're using.
 
 ### 6. Exception Handling with Collections
 - `ConcurrentModificationException`
